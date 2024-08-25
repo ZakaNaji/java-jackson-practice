@@ -1,7 +1,9 @@
 package com.znaji.entities;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonPropertyOrder({"value", "name"})
 public class Bean {
     private String name;
     private String value;
